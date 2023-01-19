@@ -81,7 +81,7 @@ function makeNegative(num) {
     }
     return result
   }
-  
+
 //   With out regex here we would have to try to convert everything to a number and
 //    if we got NAN anywhere we could throw false
 
@@ -91,3 +91,26 @@ function makeNegative(num) {
 // Adding the + character after the \d makes the regex match one or more occurrences of the \d pattern.
 // So the regex matches a string that starts and ends with a consecutive sequence of digits.
 // We can use the [0-9] pattern to match digits. This pattern matches any number character between 0 and 9.
+
+// Full regex solution adding {4}and{6} to the /d pattern
+function validatePIN(pin) {
+    return /^(\d{4}|\d{6})$/.test(pin)
+  }
+
+
+//   8KYU
+// Your classmates asked you to copy some paperwork for them. 
+// You know that there are 'n' classmates and the paperwork has 'm' pages.
+// Your task is to calculate how many blank pages do you need. If n < 0 or m < 0 return 0.
+// Example:
+// n= 5, m=5: 25
+// n=-5, m=5:  0
+
+function paperwork(n, m) {
+    if(m <= 0 || n <= 0){
+      return 0;
+    }else{
+      return n * m
+    }
+}
+  
