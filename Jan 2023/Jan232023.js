@@ -17,3 +17,23 @@ function trouble(x, t){
     }while(i< x.length);
     return x;
   };
+
+
+
+// Write a function that takes a positive integer n, 
+// sums all the cubed values from 1 to n, and returns that sum.
+// Assume that the input n will always be a positive integer.
+// Examples: (Input --> output)
+// 2 --> 9 (sum of the cubes of 1 and 2 is 1 + 8)
+// 3 --> 36 (sum of the cubes of 1, 2, and 3 is 1 + 8 + 27)
+
+  function sumCubes(n){
+    let result = 0;
+    for(let i = 0;i < n+1 ;i++){
+        result += (i * i * i);
+      console.log(result)
+    }
+    return result;
+  }
+
+console.log(sumCubes(2))
