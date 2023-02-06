@@ -6,6 +6,7 @@ function largest(n, array) {
 function boolToWord( bool ){
     return bool ? 'Yes': 'No';
 }
+
 function maskify(cc) {
     console.log(cc)
     if(cc.length <= 4){
@@ -20,5 +21,6 @@ function maskify(cc) {
         i++
       }while(i < cc.length)
       return result.reverse().join('')
-    }
-  }
+    };
+  };
+

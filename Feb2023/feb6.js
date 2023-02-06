@@ -29,4 +29,29 @@ function areYouPlayingBanjo(name) {
     if (name.startsWith("R") || name.startsWith("r")) {
       return name + " plays banjo";
     } else return name + " does not play banjo";
+}
+// 7KYU
+function trim(str, size) {
+  result ='';
+  if(str.length > size){
+    if(size > 3){
+      let i = 0;
+    do{
+      result += str[i];
+      i++
+    }while(i < size -3);
+      result+='...'
+    }else{
+      let i = 0;
+    do{
+      result += str[i];
+      i++
+    }while(i < size);
+      result+='...'
+    }
+  }else{
+    result = str;
   }
+  return result;
+}
+
