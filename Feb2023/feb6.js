@@ -18,3 +18,15 @@ function fakeBin(x){
     return result;
   }
 console.log(fakeBin('4538559312789'))
+
+// 8KYU
+function maps(x){
+    return x.map((e)=>e*2)
+  }
+
+// 8Kyu
+function areYouPlayingBanjo(name) {
+    if (name.startsWith("R") || name.startsWith("r")) {
+      return name + " plays banjo";
+    } else return name + " does not play banjo";
+  }
